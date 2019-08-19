@@ -1,8 +1,11 @@
 package com.example.recipeproject.model;
 
+import lombok.EqualsAndHashCode;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 
+@EqualsAndHashCode(exclude = {"recipe"})
 @Entity
 public class Ingredient {
 
